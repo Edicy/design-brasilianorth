@@ -5,7 +5,7 @@
 {{ blog.rss_link }}
 </head>
 <body>
-<div id="container">
+<div id="container" data-search-indexing-allowed="false">
 	{% include "Lang" %}
 	<div id="bodyContainer">
   <div class="bgLeafLeft left"></div>

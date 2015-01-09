@@ -14,7 +14,7 @@
    {% include "Mainmenu" %}
    <div id="content" class="blog clearfix">
     {% include "Submenu" %}
-    {% content %}
+    <span data-search-indexing-allowed="true">{% content %}</span>
                                 <div class="clearer"></div>
    </div>
   </div>

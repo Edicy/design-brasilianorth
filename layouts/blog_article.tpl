@@ -20,10 +20,10 @@
     <span class="green">{{ article.author.name }}</span>,
     <a href="#comments" class="none">{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></a></div>	
     
-    <p class="clearfix">
+    <p class="clearfix" data-search-indexing-allowed="true">
      {% editable article.excerpt %}
      <br /><br />
-     {% editable article.body %}
+     <span data-search-indexing-allowed="true">{% editable article.body %}</span>
       
      {% if editmode %}
         <div class="article-tags">
