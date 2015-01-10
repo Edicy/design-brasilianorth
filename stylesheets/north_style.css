@@ -286,6 +286,7 @@ div#comments h2 {
   float:left;
   width:150px;
   text-align:right;
+  line-height: 1.5em;
 	}
 	#comments .R {
   float:right;
@@ -476,6 +477,10 @@ div.edy-taglist-openarrow:after {
 
 #body .edy-taglist {
   border-color: rgba(255,255,255,.2);
+}
+
+#body .edy-btn-removecomment {
+  color: rgba(255,255,255,1) !important;
 }
 
 @media screen and (max-width: 480px) {
