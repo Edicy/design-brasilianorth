@@ -1,5 +1,7 @@
 .clearfix:after {
-  content: "."; display: block;height: 0;clear: both;font-size: 1px;line-height: 1px;visibility: hidden;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 body, p {margin:0; padding:0;}
@@ -73,7 +75,6 @@ div#titleTop {
 	}
 div#body {
 	width:616px;
-	overflow:hidden;
 background: #13244a;
 }
 .bgLeafLeft {
@@ -175,7 +176,6 @@ div#mainmenu {
 	height:229px;
 	min-height:229px;
 	padding:0 0 0 30px;
-	overflow:hidden;
 }
 	#mainmenu a {
   color:#fff;
@@ -297,7 +297,7 @@ div#comments h2 {
 }
 #footer {
 	margin:0;
-	padding:18px 35px 2px 35px;
+	padding:18px 35px 3px 35px;
 	color:#fff;
 	background:#097BA5;
 }
@@ -453,6 +453,31 @@ div.edy-taglist-openarrow:after {
     padding-bottom: 30px;
     background: none;
 }
+
+/* Voog cms style overrides */
+#body .edy-empty-bordered {
+  color: rgba(255,255,255,.33);
+  border-color: rgba(255,255,255,.33);
+}
+#body .edy-texteditor-view.placeholder {
+  color: rgba(255,255,255,.5);
+}
+#body .edy-content-element-hover {
+  border-color: rgba(255,255,255,.1);
+}
+#body .edy-texteditor-active {
+  outline-color: rgba(255,255,255,.2);
+}
+
+#body .edy-fe-field-active,
+#body .edy-fe-active .edy-fe-field:hover {
+  outline-color: rgba(255,255,255,.1);
+}
+
+#body .edy-taglist {
+  border-color: rgba(255,255,255,.2);
+}
+
 @media screen and (max-width: 480px) {
     .tagged-list-header {
         padding-top: 0px;
