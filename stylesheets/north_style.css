@@ -177,6 +177,15 @@ div#mainmenu {
 	min-height:229px;
 	padding:0 0 0 30px;
 }
+div#mainmenu ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+div#mainmenu li {
+  display: inline-block;
+}
 	#mainmenu a {
   color:#fff;
   background:#097ba5;
@@ -194,6 +203,14 @@ div#mainmenu {
 	#mainmenu a:hover {background:#d0ecf8;}
 	#mainmenu a.active {color:#000; background:#fff;}
 	#mainmenu a.active:hover {background:#fff;}
+  #mainmenu a.edy-cbtn {
+    padding-left: 5px;
+    padding-right: 5px; 
+  }
+  #mainmenu a.edy-cbtn,
+  #mainmenu a.edy-cbtn:hover {
+    background: none;
+  }
 div#content {
 	background:#13244a;
 	padding:20px 35px 29px 35px;
@@ -235,6 +252,15 @@ div#content {
 .submenu {
 	padding:0 0 15px 0;
 } 
+.submenu ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.submenu ul li {
+  display: inline-block;
+}
 .submenu a {
 	padding-right:15px;
 }
