@@ -1,6 +1,6 @@
 	<div id="bgfooter">
   <div id="footer">
-   <p class="clearfix">{% content name="footer" xpage="true" %}</p>
+   <p class="clearfix content-hyphenate">{% content name="footer" xpage="true" %}</p>
   </div>
 	</div>
 	<div id="footerBot">

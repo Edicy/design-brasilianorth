@@ -15,7 +15,7 @@
    {% include "Mainmenu" %}
    <div id="content" class="blog clearfix">
     {% include "Submenu" %}
-    <span data-search-indexing-allowed="true">{% content %}</span>
+    <div class="content-hyphenate" data-search-indexing-allowed="true">{% content %}</div>
                                 <div class="clearer"></div>
    </div>
   </div>

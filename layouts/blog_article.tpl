@@ -21,9 +21,9 @@
     <a href="#comments" class="none">{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></a></div>	
     
     <p class="clearfix" data-search-indexing-allowed="true">
-     {% editable article.excerpt %}
+     <div class="content-hyphenate">{% editable article.excerpt %}</div>
      <br /><br />
-     <span data-search-indexing-allowed="true">{% editable article.body %}</span>
+     <div class="content-hyphenate" data-search-indexing-allowed="true">{% editable article.body %}</div>
       
      {% if editmode %}
         <div class="article-tags">
@@ -44,7 +44,7 @@
     </p>
     <div class="clearer"></div>
     <div class="hrr"></div>
-    <div id="comments">
+    <div id="comments" class="content-hyphenate">
      <h2>{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></h2>
      <div class="br"></div>
      
