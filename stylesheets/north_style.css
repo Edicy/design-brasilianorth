@@ -515,7 +515,13 @@ div.edy-taglist-openarrow:after {
 }
 
 #body .edy-btn-removecomment {
+  position: relative;
+  top: 1px;
   color: rgba(255,255,255,1) !important;
+  line-height: 0 !important;
+}
+#body .edy-site-blog-comment:hover .edy-btn-removecomment {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 480px) {

@@ -5,7 +5,7 @@
 {{ blog.rss_link }}
 </head>
 <body>
-<div id="container">
+<div id="container" class="content-hyphenate">
 	{% include "Lang" %}
 	<div id="bodyContainer">
   <div class="bgLeafLeft left"></div>
@@ -21,9 +21,9 @@
     <a href="#comments" class="none">{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></a></div>	
     
     <p class="clearfix" data-search-indexing-allowed="true">
-     <div class="content-hyphenate">{% editable article.excerpt %}</div>
+     <div>{% editable article.excerpt %}</div>
      <br /><br />
-     <div class="content-hyphenate" data-search-indexing-allowed="true">{% editable article.body %}</div>
+     <div data-search-indexing-allowed="true">{% editable article.body %}</div>
       
      {% if editmode %}
         <div class="article-tags">
@@ -44,7 +44,7 @@
     </p>
     <div class="clearer"></div>
     <div class="hrr"></div>
-    <div id="comments" class="content-hyphenate">
+    <div id="comments">
      <h2>{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></h2>
      <div class="br"></div>
      

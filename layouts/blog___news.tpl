@@ -5,7 +5,7 @@
 {{ blog.rss_link }}
 </head>
 <body>
-<div id="container" data-search-indexing-allowed="false">
+<div id="container" class="content-hyphenate" data-search-indexing-allowed="false">
 	{% include "Lang" %}
 	<div id="bodyContainer">
   <div class="bgLeafLeft left"></div>
@@ -33,7 +33,7 @@
      {{ article.author.name }},
      <a href="{{ article.url }}#comments" class="none">{{"comments_for_count"|lc}}: {{ article.comments_count }}</a>
     </div>
-    <p class="clearfix content-hyphenate">{{ article.excerpt }} <a href="{{ article.url }}">{{"read_more"|lc}}</a></p>
+    <p class="clearfix">{{ article.excerpt }} <a href="{{ article.url }}">{{"read_more"|lc}}</a></p>
     <div class="hr"></div>
     {% endfor %}	
    </div>

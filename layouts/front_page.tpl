@@ -5,7 +5,7 @@
   <title>{{site.name}} &raquo; {{page.title}}</title>
 </head>
 <body>
-<div id="container">
+<div id="container" class="content-hyphenate">
 	{% include "Lang" %}
 	<div id="bodyContainer">
   <div class="bgLeafLeft left">
@@ -15,7 +15,7 @@
    {% include "Mainmenu" %}
    <div id="content" class="blog clearfix">
     {% include "Submenu" %}
-    <div class="content-hyphenate" data-search-indexing-allowed="true">{% content %}</div>
+    <div data-search-indexing-allowed="true">{% content %}</div>
                                 <div class="clearer"></div>
    </div>
   </div>
