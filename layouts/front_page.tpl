@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ page.language_code }}" lang="{{ page.language_code }}">
 <head>
 {% include "Head" %}
-  <title>{{site.name}} &raquo; {{page.title}}</title>
 </head>
 <body>
 <div id="container" class="content-hyphenate">
